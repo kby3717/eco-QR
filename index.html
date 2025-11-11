@@ -15,17 +15,17 @@
 
     body {
       background-color: #f6fff8;
-      color: #1b3b1b; /* 전체 본문 글자 어둡게 */
+      color: #1b3b1b; /* 더 어두운 녹색으로 변경 */
       line-height: 1.6;
     }
 
     header {
-      background: linear-gradient(135deg, #a8e6cf, #dcedc1);
+      background: linear-gradient(135deg, #9ddbbf, #cde7b5);
       display: flex;
       align-items: center;
       justify-content: space-between;
       padding: 15px 40px;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
       position: sticky;
       top: 0;
       z-index: 100;
@@ -37,18 +37,18 @@
       align-items: center;
       font-size: 28px;
       font-weight: bold;
-      color: #0e2b0e; /* 더 어두운 초록 */
+      color: #0f2d0f; /* 로고 글자 진한 녹색 */
     }
 
     .logo svg {
       width: 36px;
       height: 36px;
       margin-right: 10px;
-      fill: #0e2b0e;
+      fill: #0f2d0f;
     }
 
     nav a {
-      color: #263322; /* 네비게이션 어둡게 */
+      color: #183d18;
       margin: 0 15px;
       text-decoration: none;
       font-weight: 500;
@@ -65,7 +65,7 @@
 
     h2 {
       font-size: 32px;
-      color: #0e2b0e; /* 제목 색상 어둡게 */
+      color: #0f2d0f;
       margin-bottom: 20px;
       border-left: 6px solid #4caf50;
       padding-left: 10px;
@@ -74,41 +74,40 @@
     p {
       margin-bottom: 15px;
       font-size: 18px;
-      color: #1b3b1b; /* 본문 글씨색 어두운 초록 */
+      color: #1b3b1b;
     }
 
     /* ===== 메인 섹션 ===== */
     .main {
       background: url('https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=1400&q=60') center/cover no-repeat;
-      color: #0f2a0f; /* 밝은 배경 대비 어두운 글자색 */
+      color: #0d260d; /* 어두운 녹색 글씨 */
       text-align: center;
       padding: 150px 15%;
-      text-shadow: 1px 1px 3px rgba(255,255,255,0.5); /* 약간의 가독성 보정 */
+      background-blend-mode: overlay;
+      background-color: rgba(255,255,255,0.6); /* 가독성 강화용 오버레이 */
     }
 
     .main h1 {
       font-size: 60px;
       margin-bottom: 20px;
-      color: #0b1f0b;
+      text-shadow: 1px 1px 4px rgba(255, 255, 255, 0.6);
     }
 
     .main p {
       font-size: 22px;
       font-weight: 400;
-      color: #1a3a1a;
     }
 
     /* ===== 참여 섹션 ===== */
     .participate {
-      background-color: #e8f5e9;
+      background-color: #e6f3e6;
       border-radius: 12px;
       padding: 40px;
-      color: #1b3b1b;
     }
 
     .participate button {
-      background-color: #4caf50;
-      color: #ffffff;
+      background-color: #2e7d32;
+      color: white;
       border: none;
       padding: 15px 30px;
       font-size: 18px;
@@ -119,18 +118,17 @@
     }
 
     .participate button:hover {
-      background-color: #388e3c;
+      background-color: #1b5e20;
     }
 
     /* ===== 앱 다운로드 섹션 ===== */
     .download {
       text-align: center;
-      color: #1b3b1b;
     }
 
     .download a {
       display: inline-block;
-      background-color: #66bb6a;
+      background-color: #388e3c;
       color: white;
       padding: 15px 30px;
       border-radius: 8px;
@@ -141,35 +139,46 @@
     }
 
     .download a:hover {
-      background-color: #43a047;
+      background-color: #1b5e20;
     }
 
     /* ===== 계획 섹션 ===== */
-    .plan {
-      color: #1b3b1b;
-    }
-
     .plan ul {
       margin-top: 15px;
       list-style-type: circle;
       margin-left: 20px;
+      color: #1b3b1b;
     }
 
     /* ===== 후원 및 문의 ===== */
     footer {
-      background-color: #0e2b0e;
-      color: #e8f5e9;
+      background-color: #0f2d0f;
+      color: #e8ffe8; /* 전체 텍스트 밝게 변경 */
       text-align: center;
       padding: 40px 15%;
     }
 
+    footer h2 {
+      color: #b2ffb2; /* 타이틀 연한 초록색 */
+      border-left: none;
+      font-size: 30px;
+      margin-bottom: 20px;
+    }
+
+    footer p {
+      color: #e8ffe8;
+      font-size: 17px;
+    }
+
     footer a {
-      color: #a5d6a7;
+      color: #c8ffc8;
       text-decoration: none;
+      font-weight: 500;
     }
 
     footer a:hover {
       text-decoration: underline;
+      color: #ffffff;
     }
 
     /* ===== 스크롤 애니메이션 ===== */
